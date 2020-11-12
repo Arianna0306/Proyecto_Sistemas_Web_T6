@@ -7,7 +7,7 @@ Justin Hernández Jover
 
 Pablo López Artero
 
-Justin Hernández Jover
+Arianna López Encarnación
 
 Ignacio de Gregorio Camarero
 
