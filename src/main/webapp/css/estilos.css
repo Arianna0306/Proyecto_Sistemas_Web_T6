@@ -1,0 +1,505 @@
+.navbar-nav{
+    background: black;
+    background-image: linear-gradient(to bottom, black, #324479);
+    background-repeat: repeat-x;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(218, 216, 216, 0.726);
+  }
+
+.tipo-solicitud{
+    border: 2px solid gray;
+    border-radius: 6px;
+    width: 45%;
+    height: 6cm;
+    margin-left: 2%;
+    float: left;
+    position: relative;
+}
+
+.fecha-solicitud{
+    border: 2px solid gray;
+    border-radius: 6px;
+    width: 45%;
+    height: 6cm;
+    margin-right: 2%;
+    float: right;
+    position: relative;
+}
+
+.observaciones-solicitud{
+    border: 2px solid gray;
+    border-radius: 6px;
+    width: 90%;
+    height: 6cm;
+    text-align: left;
+    margin-left: 5%;
+    float:left;
+    margin-top: 1cm;
+    position: relative;
+}
+
+.tipo-solicitud h1,
+.fecha-solicitud h1,
+.observaciones-solicitud h1,
+.marcaje-entrada h1,
+.marcaje-salida h1,
+.horas-proyectos h1,
+.empresas-c h1,
+.informe-c h1,
+.emp-rrhh h1,
+.pry-rrhh h1,
+.emple-rrhh h1,
+.empleados-c h1,
+.proyectos-c h1{
+    color: #4e73df;
+    margin-left: 0.5cm;
+    margin-top: 0.2cm;
+    font-size: 200%;
+}
+
+.tipo-solicitud hr,
+.fecha-solicitud hr,
+.observaciones-solicitud hr{
+    border: 0;
+    border-top: 1px solid gray;
+}
+
+.tipos dias,
+.tipos vacaciones,
+.tipos horas,
+.tipos deb_in{
+    font-size: 100%;
+}
+
+.tipos,
+.obs,
+.fecha,
+.hora-ms,
+.hora-me{
+    float: left;
+    margin-left: 1cm;
+    position: relative;
+}
+
+
+
+.fecha{
+    position: relative;bottom: 0.3cm;
+}
+
+.hora{
+    float: right;
+    margin-right: 1cm;
+    position: relative;bottom: 0.3cm;
+}
+
+.envia_sol,
+.me-boton,
+.ms-boton,
+.ms-boton-inf{
+    float: right;
+    position: relative;
+    background-color: #4e73df;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+
+.marcaje-entrada{
+    border: 2px solid gray;
+    border-radius: 6px;
+    width: 45%;
+    height: 6cm;
+    margin-left: 2%;
+    float: left;
+    position: relative;
+}
+
+.horas-proyectos{
+    border: 2px solid gray;
+    border-radius: 6px;
+    width: 45%;
+    height: 13cm;
+    margin-right: 2%;
+    float: right;
+    position: relative;
+}
+
+.marcaje-salida{
+    border: 2px solid gray;
+    border-radius: 6px;
+    width: 45%;
+    height: 6cm;
+    margin-left: 2%;
+    float: left;
+    position: relative;bottom: -1cm;
+}
+
+
+.me-boton,
+.ms-boton,
+.ms-boton-inf{
+    margin-right: 1%;
+}
+
+
+.parrafo-fecha1,
+.parrafo-fecha2{
+    margin-right: 2%;
+    float:right;
+    position: relative;
+}
+
+.cargar-hora1,
+.cargar-hora2{
+    float: right;
+    position: relative;
+    margin-right: 6%;
+    background-color: #4e73df;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+#entrada-mh,
+#salida-mh{
+    background-color: white;
+}
+
+.Proyectos,
+.hora-py,
+.horas-proyectos h2,
+.boton{
+    text-align: center;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hora-py{
+    margin-top: 4%;
+}
+
+.py{
+    size: 50%;
+    margin-top: 2%;
+}
+
+.boton{
+    margin-top: 2%;
+    background-color: #4e73df;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+
+.empresas,
+.empresas-c,
+.informe-c,
+.informe,
+.empleados-c,
+.empleados,
+.proyectos-c,
+.proyectos{
+    border: 2px solid gray;
+    border-radius: 6px;
+    position: relative;
+}
+
+.empresas-c,
+.empleados-c,
+.proyectos-c{
+    height: 1.5cm;
+}
+
+
+.empleados{
+    height: 13cm;
+    margin-top: 0.5cm;
+    text-align: center;
+}
+
+.empresas-list,
+.empleados-list,
+.proyectos-list{
+    margin-right: 2%;
+    float: right;
+    position: relative;bottom: 70%;
+}
+
+
+.emp-form1{
+    margin-left: 5%;
+    float: left;
+    position: relative;
+}
+
+.emp-form2{
+    margin-right: 5%;
+    float: right;
+    position: relative;
+}
+
+
+#cif,
+#nom,
+#dir,
+#dir-pdf,
+#act,
+#tel,
+#desc,
+#id-p,
+#dni-perf,
+#nom-perf,
+#ap-perf,
+#tlf-perf,
+#cif-perf,
+#proyectos-perf,
+#text-rrhh{
+    border: transparent;
+    background-color: #dddfeb;
+}
+
+.empresas h1,
+.informe h1,
+.proyectos h1,
+.empleados h1{
+    color: #4e73df;
+    margin-top: 0.2cm;
+    font-size: 200%;
+}
+
+
+.informe-c{
+    height: 20cm;
+    width: 20%;
+    float: left;
+    margin-left: 3%;
+}
+
+.informe{
+    display: block;
+    height: 20cm;
+    width: 70%;
+    float: right;
+    margin-right: 3%;
+    text-align: center;
+    align-items: center;
+}
+
+.inf-form1{
+    margin-left: 15%;
+    margin-top: 3%;
+    float: left;
+    position: relative;
+}
+
+.ms-boton-inf{
+    margin-top: 7%;
+}
+
+
+.gen-pdf{  
+    margin-top: 2%;
+    float: left;
+    position: relative;
+    background-color: #4e73df;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+
+.gen-pdf{
+    margin-left: 40%;    
+}
+
+#crea,
+#upd,
+#guarda,
+#borra{
+    height: 0.7cm;
+    background-color: #4e73df;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    position: relative;
+}
+
+#botones{
+    position: absolute;
+    bottom: 7%;
+    right: 0;
+    left: 0;
+}
+
+
+.perfil_emp{
+    border: 2px solid gray;
+    border-radius: 6px;
+    width: 90%;
+    height: 13.5cm;
+    float: left;
+    margin-left: 5%;
+    position: relative;
+}
+
+
+.form-perf-emp{
+    margin-top: 5%;
+    margin-left: 5%;
+    float:left;
+    position: relative;
+}
+
+.form-perf-emp-der{
+    margin-top: 5%;
+    margin-right: 5%;
+    float: right;
+    position: relative;
+}
+
+#logoutModal,
+#exampleModalLabel{
+    background: transparent;
+}
+
+
+.perfil_rrhh{
+    border: 2px solid gray;
+    border-radius: 6px;
+    width: 50%;
+    height: 12cm;
+    float: left;
+    margin-left: 25%;
+    position: relative;
+}
+
+
+.form-perf-rrhh{
+    margin-top: 9%;
+    text-align: center;
+    position: relative;
+}
+
+
+.emp-rrhh,
+.pry-rrhh,
+.emple-rrhh{
+    border: 2px solid gray;
+    border-radius: 6px;
+    width: 30%;
+    height: 14.5cm;
+    text-align: center;
+    float:left;
+    margin-top: 2%;
+    margin-left: 2.5%;
+    position: relative;
+}
+
+
+
+
+.fondo-login{
+    width: 10cm;
+    height: 10cm;
+    background-image: url("../img/pexels-johannes-plenio-1103970.jpg");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+.contenedorLogin,
+.logo{
+    width: 13.35cm;
+    height: 13.35cm;
+    background-color: rgba(7, 22, 112, 0.274);
+    border: 2px solid #324479;
+    border-radius: 5px;
+    margin-top: 5%;
+    float: left;
+    position: relative;
+}
+
+.contenedorLogin{
+    margin-left: 17%;
+}
+
+#exampleInputEmail,
+#exampleInputPassword,
+#customCheck,
+#olvidada,
+#recordatorio,
+#emple-log,
+#rrhh-log{
+    color: black;
+    font-weight: 500;
+}
+
+.text-center{
+    margin-top: 10%;
+}
+
+.user{
+    margin-left: 10%;
+}
+
+#color-boton{
+    background-color: #324479;
+    border: #324479;
+}
+
+#cab-centrada{
+    text-align: center;
+}
+
+
+.form-emp-info{
+    margin-left: 5%;
+    float: left;
+    position: relative;
+}
+
+.form-emp-der-info{
+    margin-right: 5%;
+    float: right;
+    position: relative;
+}
+
+.empleados{
+    height: 16cm;
+}
+
+.empresas{
+    height: 11cm;
+    margin-top: 0.5cm;
+    text-align: center;
+}
+
+.proyectos{
+    height: 12.5cm;
+    margin-top: 0.5cm;
+    text-align: center;
+}
+
+.calendario-c{
+    margin-top: 1cm;
+}
+
+#emple-log{
+    margin-left: 20%;
+}
+
+#rrhh-log{
+    margin-left: 5%;
+}
