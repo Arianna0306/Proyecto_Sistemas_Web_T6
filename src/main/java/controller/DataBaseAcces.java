@@ -9,6 +9,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import model.Empleado;
 
 /**
  *
@@ -59,4 +60,23 @@ public class DataBaseAcces {
 		}
 		return isRRHH;
 	}
+
+    public Empleado getEmpleado(String dni) {
+        Empleado emple = null;
+		Statement stmt;
+		try {
+			stmt = con.createStatement();
+			ResultSet rs = stmt.executeQuery("SELECT * FROM empleado WHERE dni_empleado = '"+dni+"'");   
+				while(rs.next())
+				{
+					emple = new Empleado(rs.getString("dni_empleado"), rs.getString("nombre"), rs.getString("apellidos"), rs.getString("telefono"), rs.getString("email"), rs.getFloat("horas"), rs.getString("cif_empresa"));
+				}
+                                
+		} catch (SQLException e) {
+			System.out.println("#######ERROR#####getEmpleado###############");
+			System.out.println(e.getMessage());
+			System.out.println("##################################");
+		}
+		return emple;
+    }
 }

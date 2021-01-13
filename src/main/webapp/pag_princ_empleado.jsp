@@ -4,11 +4,15 @@
     Author     : nacho
 --%>
 
+<%@page import="controller.ControladorEmpleado"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="es">
 
+<%
+ControladorEmpleado empleado = (ControladorEmpleado)request.getSession().getAttribute("Empleado");
 
+%>
 
 <head>
 
@@ -51,7 +55,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Empleado</div>
+                <div class="sidebar-brand-text mx-3">Emplado: <%=empleado.getNombre()%> <%=empleado.getApellidos()%></div>
             </a></li>
 
             <!-- Divider -->

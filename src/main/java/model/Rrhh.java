@@ -9,24 +9,20 @@ package model;
  *
  * @author nacho
  */
-public class Empleado {
+public class Rrhh {
     
     private String dni;
     private String nombre;
     private String apellidos;
     private String telefono;
     private String email;
-    private float horas;
-    private String cifEmpresa;
 
-    public Empleado(String dni, String nombre, String apellidos, String telefono, String email, float horas, String cifEmpresa) {
+    public Rrhh(String dni, String nombre, String apellidos, String telefono, String email) {
         this.dni = dni;
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.telefono = telefono;
         this.email = email;
-        this.horas = horas;
-        this.cifEmpresa = cifEmpresa;
     }
 
     public String getDni() {
@@ -49,14 +45,6 @@ public class Empleado {
         return email;
     }
 
-    public float getHoras() {
-        return horas;
-    }
-
-    public String getCifEmpresa() {
-        return cifEmpresa;
-    }
-    
     public void setDni(String dni) {
         this.dni = dni;
     }
@@ -76,17 +64,5 @@ public class Empleado {
     public void setEmail(String email) {
         this.email = email;
     }
-
-
-    public void setHoras(float horas) {
-        this.horas = horas;
-    }
-
-    public void setCifEmpresa(String cifEmpresa) {
-        this.cifEmpresa = cifEmpresa;
-    }
-    
     
 }
-
-

@@ -7,6 +7,7 @@ package servlets;
 
 import controller.ConnectionClass;
 import controller.DataBaseAcces;
+import controller.ControladorEmpleado;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -14,6 +15,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import model.Empleado;
 
 /**
  *
@@ -67,15 +69,15 @@ public class LoginServlet extends HttpServlet {
                 ConnectionClass c = new ConnectionClass();
                 DataBaseAcces data = c.getdataBaseAcces();
                 
-		String user= (String) request.getParameter("dni");
+		String dni= (String) request.getParameter("dni");
 		String pass = (String) request.getParameter("pass");
 		
 		request.getSession().setAttribute("con", c);
                 request.getSession().setAttribute("data", data);
 		//verificar si es usuario, empleado o administrador
 		
-		Boolean isRRHH= data.isRRHH(user,pass);
-		Boolean isEMPLE= data.isEmple(user,pass);
+		Boolean isRRHH= data.isRRHH(dni,pass);
+		Boolean isEMPLE= data.isEmple(dni,pass);
                 
                 
                 if(!isEMPLE && !isRRHH)
@@ -86,8 +88,9 @@ public class LoginServlet extends HttpServlet {
                 {
                     //cargar los obj de la base de datos
                     //-------------------
-                    
-                    
+                    Empleado emple= data.getEmpleado(dni);
+                    ControladorEmpleado controladorEmpleado = new ControladorEmpleado(emple);
+                    request.getSession().setAttribute("Empleado", controladorEmpleado);
                     //-------------------
                     request.getRequestDispatcher("pag_pinc_empleado.jsp").forward(request, response);
                 } else if(isRRHH)
