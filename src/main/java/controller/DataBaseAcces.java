@@ -24,8 +24,6 @@ public class DataBaseAcces {
 	{
 		return con;
 	}
-	
-	
 	public Boolean isEmple(String user, String pass) {
 		boolean isEmple = false;
 		Statement stmt;

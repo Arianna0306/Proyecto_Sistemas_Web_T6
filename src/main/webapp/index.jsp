@@ -46,13 +46,12 @@
                 <div class="form-group">
                     <input type="password" class="form-control form-control-user" id="pass" name="pass" placeholder="Password" style="width: 85%;">
                 </div>
-
-                <div class="form-group">
-                    <div class="custom-control custom-checkbox small">
-                        <input type="checkbox" class="custom-control-input" id="customCheck">
-                        <label class="custom-control-label" id="recordatorio" for="customCheck">Recuerdame</label>
-                    </div>
-                </div>
+                <%
+                if(request.getParameter("status").equals("no_user"))
+                {
+                %>
+                <p style="color:red">Usuario o contraseña erroneos</p>
+                <%}%>
                 <button type="submit" class="btn btn-primary btn-user btn-block" id="color-boton" style="width: 85%;">Iniciar sesión</button>
                 
             </form>

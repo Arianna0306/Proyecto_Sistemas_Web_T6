@@ -3,8 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package controller;
+package servlets;
 
+import controller.ConnectionClass;
+import controller.DataBaseAcces;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -64,10 +66,12 @@ public class LoginServlet extends HttpServlet {
         
                 ConnectionClass c = new ConnectionClass();
                 DataBaseAcces data = c.getdataBaseAcces();
-		String user= (String) request.getParameter("email");
+                
+		String user= (String) request.getParameter("dni");
 		String pass = (String) request.getParameter("pass");
 		
-		
+		request.getSession().setAttribute("con", c);
+                request.getSession().setAttribute("data", data);
 		//verificar si es usuario, empleado o administrador
 		
 		Boolean isRRHH= data.isRRHH(user,pass);
@@ -80,7 +84,7 @@ public class LoginServlet extends HttpServlet {
                     request.getRequestDispatcher("index.jsp?status=no_user").forward(request, response);
                 } else if(isEMPLE)
                 {
-                    //carcar los obj de la base de datos
+                    //cargar los obj de la base de datos
                     //-------------------
                     
                     
@@ -88,7 +92,7 @@ public class LoginServlet extends HttpServlet {
                     request.getRequestDispatcher("pag_pinc_empleado.jsp").forward(request, response);
                 } else if(isRRHH)
                 {
-                    //carcar los obj de la base de datos
+                    //cargar los obj de la base de datos
                     //-------------------
                     
                     
